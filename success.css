@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This centers vertically */
+  margin: 0; /* Removes default margin */
+  background-color: hsl(235, 18%, 26%);
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  background-color: hsl(0, 0%, 100%);
+  width: 330px;
+  height: 340px;
+  border-radius: 25px;
+  padding: 50px;
+
+}
+
+.tfs {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+p {
+  color: hsl(234, 29%, 20%);
+}
+
+img {
+  width: 50px;
+}
+
+.dismissbtn {
+  margin-top: 20px;
+  height: 50px;
+  width: 330px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+}
+
+.dismissbtn:active {
+  
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 4px 20px hsl(0, 100%, 50%);
+  
+}
+
+@media only screen and (max-width: 430px) {
+  body {
+    background-color:  hsl(0, 0%, 100%);
+  }
+
+  .dismissbtn {
+    margin-top: 90px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 380px)  {
+  .main {
+    padding: 10px;
+    margin-left: 80px ;
+  }
+}
+
