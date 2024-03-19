@@ -10,4 +10,15 @@ document.addEventListener("DOMContentLoaded", function() {
     // Handle case where email parameter is not provided
     document.getElementById("userEmail").textContent = "Email not found";
   }
-})
+});
+
+function backToForm() {
+  // Clear the input field
+  var emailInput = document.getElementById("email");
+  if (emailInput) {
+    emailInput.value = "";
+  }
+  window.location.href = "index.html";
+}
+
+
