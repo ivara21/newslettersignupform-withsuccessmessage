@@ -120,6 +120,18 @@ p {
   border-color: red;
 }
 
+.valid-input {
+    width: 310px;
+    height: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    border: solid;
+    border-width: 1px;
+    border-color: hsl(231, 7%, 60%);
+}
+
+
+
 
 @media only screen and (max-width: 830px) {
   .main {
