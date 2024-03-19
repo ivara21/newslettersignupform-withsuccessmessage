@@ -34,12 +34,32 @@ window.addEventListener('resize', updateImageSrc);
         // If email is invalid, show error message
         emailInput.classList.add("error-input"); // Add error class
         document.getElementById("error").innerHTML = "Valid Email Required.";
-        // document.getElementById("email").style.backgroundColor = "pink"
-        // document.getElementById("email").style.color = "red";
-        // document.getElementById("email").style.borderColor = "red";
-        
+
     }
 }
+
+    function updateEmailInputStyle() {
+      var emailInput = document.getElementById("email");
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      var email = emailInput.value;
+
+      if (emailPattern.test(email)) {
+        // If email is valid, change input style to indicate success
+        emailInput.classList.remove("error-input"); // Remove error class
+        emailInput.classList.add("valid-input"); // Add success class
+      } else {
+        // If email is invalid, change input style to indicate error
+        emailInput.classList.remove("valid-input"); // Remove success class
+        emailInput.classList.add("error-input"); // Add error class
+      }
+    }
+
+    // Add input event listener to update style while typing
+    var emailInput = document.getElementById("email");
+    emailInput.addEventListener("input", function() {
+      updateEmailInputStyle();
+    });
+
 
 
 
