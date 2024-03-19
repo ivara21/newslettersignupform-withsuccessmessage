@@ -47,6 +47,7 @@ window.addEventListener('resize', updateImageSrc);
         // If email is valid, change input style to indicate success
         emailInput.classList.remove("error-input"); // Remove error class
         emailInput.classList.add("valid-input"); // Add success class
+        document.getElementById("error").innerHTML = "";
       } else {
         // If email is invalid, change input style to indicate error
         emailInput.classList.remove("valid-input"); // Remove success class
