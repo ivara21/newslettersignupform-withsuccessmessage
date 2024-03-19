@@ -52,6 +52,7 @@ window.addEventListener('resize', updateImageSrc);
         // If email is invalid, change input style to indicate error
         emailInput.classList.remove("valid-input"); // Remove success class
         emailInput.classList.add("error-input"); // Add error class
+        document.getElementById("error").innerHTML = "Valid Email Required.";
       }
     }
 
